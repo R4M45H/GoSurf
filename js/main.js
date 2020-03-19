@@ -42,7 +42,7 @@ $(function() {
         breakpoint: 900,
         settings: {
           slidesToShow: 2,
-          centerMode: true
+          centerMode: false,
         }
       },
       {
@@ -88,7 +88,7 @@ $(function() {
         breakpoint: 720,
         settings: {
           slidesToShow: 1,
-          centerMode: false,
+          centerMode: true,
         }
       }
     ]
@@ -165,5 +165,11 @@ $(function() {
     $(".menu, .menu-btn").toggleClass("active");
   });
 
-    new WOW().init();
+  var wow = new WOW(
+    {
+      mobile: false,       // trigger animations on mobile devices (default is true)
+    }
+  );
+  wow.init();
+    
 });
