@@ -165,11 +165,11 @@ $(function() {
     $(".menu, .menu-btn").toggleClass("active");
   });
 
-  var wow = new WOW(
-    {
-      mobile: false,       // trigger animations on mobile devices (default is true)
-    }
-  );
-  wow.init();
+  //var wow = new WOW(
+  //  {
+   //   mobile: false,       // trigger animations on mobile devices (default is true)
+  //  }
+  //);
+  new WOW().init();
     
 });
