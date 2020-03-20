@@ -1,13 +1,18 @@
 $(function() {
   //HEADER SLIDER
+
   $(".header__slider").slick({
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     fade: true,
     prevArrow:
       '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="arrows-left"></img>',
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="arrows-right"></img>',
     asNavFor: ".slider-dotshead" //for connected with dashed
+
+    
   });
 
   //DASHED SLIDER
@@ -25,6 +30,7 @@ $(function() {
 
   //SURF SLIDER
   $(".surf-slider").slick({
+    LazyLoad: 'ondemand',
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
@@ -99,6 +105,7 @@ $(function() {
   //TRAVEL AND SLEEP SLIDER
   $(".holder__slider, .shop__slider").slick({
     infinite: true,
+    LazyLoad: 'ondemand',
     fade: true,
     prevArrow:
       '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="arrows-left"></img>',
