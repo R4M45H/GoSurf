@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="css/style.min.css" />
     <script>
       function preloader() {
+        
         var preloader = document.getElementById("preloader");
         preloader.style.opacity = "0";
         preloader.setAttribute("aria-busy", "false");
         document.getElementById("site").style.opacity = "1";
         
         }
+    
         window.onload = preloader; 
+        setTimeout(function() {
+          fadePreLoader(preLoader);
+        }, 3000);
         
   /*     function loadData() {
         return new Promise((resolve, reject) => {
@@ -41,7 +46,7 @@
       <header class="header">
         <div class="header__title">go surf</div>
         <div class="header__arrows">
-          <a href="#" class="animated fadeInDown infinite slow"><img src="images/arrows-down.svg" alt="arrows-down"></a>
+          <a href="#" class="animated fadeInDown infinite slow"><img src="images/arrows-down.svg" src="images/arrows-down.svg" alt="arrows-down"></a>
         </div>
         <div class="header__map">
           <svg width="1001" height="496" viewBox="0 0 1001 496" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +178,7 @@
               </div>
             </div>
 
-            <div class="slider-map wow fadeIn" data-wow-offset="350" data-wow-duration="1.5s">
+            <div class="slider-map wow fadeIn" data-wow-offset="100" data-wow-duration="1.5s">
               <div class="slider-dots slider-dots--1 wow fadeIn" data-wow-delay="1.2s">
                 <div class="slider-dots__circle"></div>
                 <div class="slider-dots__content wow fadeIn" data-wow-delay="2.3s">
@@ -1267,6 +1272,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
+    <script src="js/lazyload.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -193,7 +193,7 @@ $(function() {
 
   //Возврат в начало сайта
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 2000) {
+    if ($(this).scrollTop() > 1500) {
     $('.scrollup').fadeIn();
     } else {
     $('.scrollup').fadeOut();
@@ -204,9 +204,8 @@ $(function() {
     $("html, body").animate({ scrollTop: 0 }, 1500);
     return false;
   });
-  
-  //Preloader
 
+  //Preloader
 
 });
 
