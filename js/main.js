@@ -106,7 +106,7 @@ $(function() {
       '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg" alt="arrows-right"></img>'
   });
 
-  //SLEEP CALC
+  //SLEEP CALC INPUTs
 
   $(
     '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="images/plus.svg" alt="plus"></div><div class="quantity-button quantity-down"><img src="images/minus.svg" alt="minus"></div></div>'
@@ -149,7 +149,7 @@ $(function() {
   // $('.summ', parents).html('$' + summ);
   //});
 
-  //calc
+  //calc sleep
   $(".quantity-button").on("click", function() {
     var parents = $(this).parents(".holder-slider__info");
     let summ =
@@ -171,22 +171,48 @@ $(function() {
     $(".menu, .menu-btn").toggleClass("active");
   });
 
+  //Инициация библиотеки WoW
   //var wow = new WOW(
   //  {
   //   mobile: false,       // trigger animations on mobile devices (default is true)
   //  }
   //);
   new WOW().init();
-
-    $("#menu-nav").on("click","a", function (event) { 
+  
+  //Плавный скролл меню
+  $("#menu-nav").on("click","a", function (event) { 
     //отменяем стандартную обработку нажатия по ссылке 
     event.preventDefault(); 
     //забираем идентификатор бока с атрибута href 
     var id = $(this).attr('href'), 
     //узнаем высоту от начала страницы до блока на который ссылается якорь 
     top = $(id).offset().top; 
-     //анимируем переход на расстояние - top за 1500 мс 
+      //анимируем переход на расстояние - top за 1500 мс 
     $('body,html').animate({scrollTop: top}, 1500); 
-    }); 
+  }); 
+
+  //Возврат в начало сайта
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 2000) {
+    $('.scrollup').fadeIn();
+    } else {
+    $('.scrollup').fadeOut();
+    }
+    });
+      
+    $('.scrollup').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 1500);
+    return false;
+  });
+       
+
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 5500);
+  }
+
 });
 
