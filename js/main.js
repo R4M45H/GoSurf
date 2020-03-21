@@ -174,7 +174,7 @@ $(function() {
     $(this).toggleClass("active");
   });
 
-  //Mobile-menu
+  //Mobile-Tablet Menu
   $(".menu-btn").on("click", function() {
     $(".menu, .menu-btn").toggleClass("active");
   });
@@ -218,12 +218,12 @@ $(function() {
   });
 
   //Preloader
-  $('body').css('overflow-y','hidden');
-  $('body').css('position','static');
-  $(window).on("load", function() {
-    $('body').css('overflow-y','auto');
-    $('body').css('position','static');
-  });
+  // $('body').css('overflow-y','hidden');
+  // $('body').css('position','static');
+  // $(window).on("load", function() {
+  //   $('body').css('overflow-y','auto');
+  //   $('body').css('position','static');
+  // });
     
 });
 
