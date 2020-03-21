@@ -174,9 +174,14 @@ $(function() {
     $(this).toggleClass("active");
   });
 
+  //Mobile-menu
   $(".menu-btn").on("click", function() {
     $(".menu, .menu-btn").toggleClass("active");
   });
+  $("#menu-nav li a").click(function() {
+    $(".menu, .menu-btn").removeClass('active'); 
+  });
+  
 
   //Инициация библиотеки WoW
   //var wow = new WOW(
@@ -213,6 +218,12 @@ $(function() {
   });
 
   //Preloader
-
+  $('body').css('overflow-y','hidden');
+  $('body').css('position','static');
+  $(window).on("load", function() {
+    $('body').css('overflow-y','auto');
+    $('body').css('position','static');
+  });
+    
 });
 
