@@ -4,7 +4,7 @@ $(function() {
   $(".header__slider").slick({
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 8000,
     fade: true,
     prevArrow:
       '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg" alt="arrows-left"></img>',
