@@ -22,18 +22,6 @@
         setTimeout(function() {
           fadePreLoader(preLoader);
         }, 3000);
-        
-  /*     function loadData() {
-        return new Promise((resolve, reject) => {
-          setTimeout(resolve, 2000);
-        })
-      }
-      loadData()
-        .then(() => {
-          let preloaderEl = document.getElementById('preloader');
-          preloaderEl.classList.add('hidden');
-          preloaderEl.classList.remove('visible');
-        }); */
     </script>
   </head>
   <body>
@@ -176,10 +164,10 @@
               </div>
             </div>
 
-            <div class="slider-map wow fadeIn" data-wow-offset="100" data-wow-duration="1.5s">
+            <div class="slider-map lazy-background wow fadeIn" data-wow-offset="100" data-wow-duration="3s">
               <div class="slider-dots slider-dots--1 wow fadeIn" data-wow-delay="1.2s">
                 <div class="slider-dots__circle"></div>
-                <div class="slider-dots__content wow fadeIn" data-wow-delay="2.3s">
+                <div class="slider-dots__content wow fadeIn" data-wow-delay="3.3s">
                   <div class="slider-dots__content-row">
                     <div class="slider-dots__content-head">
                       <div class="slider-dots__content-title">Airlie Beach</div>
@@ -210,7 +198,7 @@
               </div>
               <div class="slider-dots slider-dots--2 wow fadeIn" data-wow-delay="1.4s">
                 <div class="slider-dots__circle"></div>
-                <div class="slider-dots__content wow fadeIn" data-wow-delay="2.5s">
+                <div class="slider-dots__content wow fadeIn" data-wow-delay="3.6s"">
                   <div class="slider-dots__content-row">
                     <div class="slider-dots__content-head">
                       <div class="slider-dots__content-title">Airlie Beach</div>
@@ -429,7 +417,7 @@
 
             <div class="surf-slider">
               <div class="surf-box">
-                <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="300" data-wow-delay=".3s" style="background-image: url(images/slide-1.jpg);">
+                <div class="surf-box__wrapper lazy-background malibu wow fadeInUp" data-wow-delay="1.5s">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Malibu Beach</div>
                     <div class="surf-box__inner-location">California<span>|</span>USA</div>
@@ -438,7 +426,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="300" data-wow-delay=".6s" style="background-image: url(images/slide-2.jpg);">
+                <div class="surf-box__wrapper lazy-background airlie wow fadeInUp" data-wow-delay="1.8s">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Airlie Beach</div>
                     <div class="surf-box__inner-location">Queensland<span>|</span>Australia</div>
@@ -449,7 +437,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="300" data-wow-delay=".9s" style="background-image: url(images/slide-3.jpg);">
+                <div class="surf-box__wrapper lazy-background cloud wow fadeInUp" data-wow-delay="2.1s">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Cloud Nine</div>
                     <div class="surf-box__inner-location">Siargao<span>|</span>Philippines</div>
@@ -460,7 +448,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="300" data-wow-delay="1.2s" style="background-image: url(images/slide-4.jpg);">
+                <div class="surf-box__wrapper lazy-background vieux wow fadeInUp" data-wow-delay="2.4s">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Vieux Boucau</div>
                     <div class="surf-box__inner-location">Hossegor<span>|</span>France</div>
@@ -471,7 +459,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper" style="background-image: url(images/slide-1.jpg);">
+                <div class="surf-box__wrapper lazy-background malibu wow fadeInUp">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Malibu Beach</div>
                     <div class="surf-box__inner-location">California<span>|</span>USA</div>
@@ -480,7 +468,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper" style="background-image: url(images/slide-2.jpg);">
+                <div class="surf-box__wrapper lazy-background airlie wow fadeInUp">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Airlie Beach</div>
                     <div class="surf-box__inner-location">Queensland<span>|</span>Australia</div>
@@ -491,7 +479,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper" style="background-image: url(images/slide-3.jpg);">
+                <div class="surf-box__wrapper lazy-background cloud wow fadeInUp">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Cloud Nine</div>
                     <div class="surf-box__inner-location">Siargao<span>|</span>Philippines</div>
@@ -502,7 +490,7 @@
                 </div>
               </div>
               <div class="surf-box">
-                <div class="surf-box__wrapper" style="background-image: url(images/slide-4.jpg);">
+                <div class="surf-box__wrapper lazy-background vieux wow fadeInUp">
                   <div class="surf-box__inner">
                     <div class="surf-box__inner-title">Vieux Boucau</div>
                     <div class="surf-box__inner-location">Hossegor<span>|</span>France</div>
@@ -526,7 +514,7 @@
             </div>
             <div class="holder__slider">
                 <div class="holder-slider__item holder-slider">
-                  <div class="holder-slider__head" style="background-image: url(images/travel-slider-bg.png);">
+                  <div class="holder-slider__head lazy-background" style="background-image: url(images/travel-slider-bg.png);">
                     <div class="holder-slider__subtitle">
                       <div class="subtitle wow fadeInRight" data-wow-offset="100" >
                         <div class="headline-left">Shore</div>
@@ -559,7 +547,7 @@
                     </div>
                   </div>
                   <div class="holder-slider__btn">
-                    <a class="btn wow fadeInUp" data-wow-delay="2.1s" href="#">Book <span>Flight</span></a>
+                    <a class="btn wow fadeInUp" data-wow-delay="2s" href="#">Book <span>Flight</span></a>
                   </div>
                 </div>
 
@@ -692,7 +680,7 @@
               </div>
               <div class="holder__slider">
                 <div class="holder-slider__item holder-slider">
-                  <div class="holder-slider__head" style="background-image: url(images/sleep-slider-bg.png);">
+                  <div class="holder-slider__head lazy-background">
                     <div class="holder-slider__subtitle">
                       <div class="subtitle wow fadeInRight" data-wow-offset="100" >
                         <div class="headline-left">Resorts</div>
@@ -742,7 +730,7 @@
                     </div>
                   </div>
                   <div class="holder-slider__btn">
-                    <a class="btn wow fadeInUp" data-wow-delay="2.1s" href="#">Book <span>Stay</span></a>
+                    <a class="btn wow fadeInUp" data-wow-delay="2s" href="#">Book <span>Stay</span></a>
                   </div>
                 </div>
 
@@ -921,10 +909,11 @@
         <section class="shop" id="shop">
           <div class="title">
             <div>
-              <span class="wow fadeInLeft" data-wow-dalay="1s">shop</span>
+              <span class="animated fadeInLeft delay-2s">shop</span>
               <h3>shop</h3>
             </div>
           </div>
+          <img class="shop-bg lazy" data-srcset="images/shop-bg.png" data-src="images/shop-bg.png" alt="shop-bg">
           <div class="shop__slider">
 
             <div class="shop__slider-item">
@@ -952,7 +941,7 @@
                   </div>
                 </div>
                 <div class="shop__slider-content">
-                  <div class="surfboard wow fadeInUp" data-wow-delay="2s">
+                  <div class="surfboard wow fadeInUp" data-wow-delay="1.9s">
                     <img class="lazy" data-srcset="images/surfboard.png" alt="surfboard">
                     <div class="surfboard-box surfboard__position--1">
                       <div class="surfboard-box__circle">
@@ -1035,7 +1024,7 @@
                 </div>
                 <div class="shop__slider-content">
                   <div class="surfboard">
-                    <img class="lazy" data-src="images/surfboard.png" data-srcset="images/surfboard.png"  alt="surfboard">
+                    <img class="lazy" data-srcset="images/surfboard.png"  alt="surfboard">
                     <div class="surfboard-box surfboard__position--1">
                       <div class="surfboard-box__circle">
                         <div class="circle-row"></div>
@@ -1118,7 +1107,7 @@
                 </div>
                 <div class="shop__slider-content">
                   <div class="surfboard">
-                    <img class="lazy" data-src="images/surfboard.png" data-srcset="images/surfboard.png"  alt="surfboard">
+                    <img class="lazy" data-srcset="images/surfboard.png"  alt="surfboard">
                     <div class="surfboard-box surfboard__position--1">
                       <div class="surfboard-box__circle">
                         <div class="circle-row"></div>
@@ -1201,7 +1190,7 @@
                 </div>
                 <div class="shop__slider-content">
                   <div class="surfboard">
-                    <img class="lazy" data-src="images/surfboard.png" data-srcset="images/surfboard.png"  alt="surfboard">
+                    <img class="lazy" data-srcset="images/surfboard.png"  alt="surfboard">
                     <div class="surfboard-box surfboard__position--1">
                       <div class="surfboard-box__circle">
                         <div class="circle-row"></div>
@@ -1270,7 +1259,6 @@
       <a href="#" class="scrollup"></a>   
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>if(/*@cc_on!@*/false){document.documentElement.className+=' ie10';}</script>
     <script src="js/libs.min.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="js/main.js"></script>

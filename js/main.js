@@ -3,6 +3,7 @@ $(function() {
 
   $(".header__slider").slick({
     infinite: true,
+    speed: 3000,
     autoplay: true,
     autoplaySpeed: 8000,
     fade: true,
@@ -30,7 +31,6 @@ $(function() {
 
   //SURF SLIDER
   $(".surf-slider").slick({
-    LazyLoad: 'ondemand',
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow:
@@ -43,7 +43,6 @@ $(function() {
         breakpoint: 1210,
         settings: {
           slidesToShow: 3,
-          centerMode: true
         }
       },
       {
@@ -117,8 +116,8 @@ $(function() {
 
   $(
     '<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="images/plus.svg" alt="plus"></div><div class="quantity-button quantity-down"><img src="images/minus.svg" alt="minus"></div></div>'
-  ).insertAfter(".quantity input");
-  $(".quantity").each(function() {
+    ).insertAfter(".quantity input");
+      $(".quantity").each(function() {
     var spinner = $(this),
       input = spinner.find('input[type="number"]'),
       btnUp = spinner.find(".quantity-up"),
@@ -184,12 +183,12 @@ $(function() {
   
 
   //Инициация библиотеки WoW
-  //var wow = new WOW(
-  //  {
-  //   mobile: false,       // trigger animations on mobile devices (default is true)
-  //  }
-  //);
-  new WOW().init();
+  var wow = new WOW(
+   {
+    mobile: false,       // отключение анимации на смартфонах
+   }
+  );
+  new WOW().init(); 
   
   //Плавный скролл меню
   $("#menu-nav").on("click","a", function (event) { 
@@ -218,12 +217,6 @@ $(function() {
   });
 
   //Preloader
-  // $('body').css('overflow-y','hidden');
-  // $('body').css('position','static');
-  // $(window).on("load", function() {
-  //   $('body').css('overflow-y','auto');
-  //   $('body').css('position','static');
-  // });
-    
+ 
 });
 
